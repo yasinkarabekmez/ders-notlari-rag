@@ -1,0 +1,23 @@
+# Ders notları depoya yüklenmez (telif hakları hocaya/yazara ait).
+# Sadece kendi yazdığımız örnek not yüklenir.
+dokumanlar/*
+!dokumanlar/ornek_zaman_serileri_notu.txt
+
+# Otomatik oluşan dosyalar
+indeks/
+prompt.txt
+__pycache__/
+*.pyc
+
+# Sanal ortamlar
+venv/
+.venv/
+
+# Gizli bilgiler (API anahtarı asla depoya girmemeli)
+.env
+
+# Sistem ve eski dosyalar
+desktop.ini
+Thumbs.db
+rag_adim_adim.py
+.streamlit/confing.toml
