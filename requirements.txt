@@ -1,0 +1,10 @@
+# PyTorch'un sadece CPU sürümü: GPU sürümü birkaç GB tutar ve ücretsiz bulut
+# sunucularına sığmaz. Embedding modeli CPU'da gayet hızlı çalışıyor.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+
+numpy
+pypdf
+sentence-transformers
+groq
+streamlit
