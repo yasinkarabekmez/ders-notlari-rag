@@ -68,7 +68,9 @@ h1, h2, h3, .da-baslik {
 }
 
 /* Üst bilgi alanı */
-.da-baslik { font-size: 2.4rem; font-weight: 600; line-height: 1.1; margin: 0; }
+[data-testid="stMarkdownContainer"] p.da-baslik {
+  font-size: 2.4rem; font-weight: 600; line-height: 1.1; margin: 0;
+}
 .da-alt { color: var(--color-muted-foreground); margin: .35rem 0 1rem 0; font-size: 1rem; }
 .da-etiketler { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
 .da-etiket {
