@@ -1,0 +1,16 @@
+ZAMAN SERİLERİ ANALİZİ - ÖRNEK DERS NOTU
+
+Durağanlık
+Bir zaman serisinin ortalaması, varyansı ve kovaryans yapısı zaman içinde değişmiyorsa seri zayıf durağandır. Kovaryansın yalnızca iki gözlem arasındaki gecikmeye bağlı olması, gözlemlerin hangi zamanda alındığına bağlı olmaması gerekir. ARMA modelleri durağan seriler için kurulur. Bu yüzden modellemeden önce serinin durağan olup olmadığı kontrol edilir.
+
+Durağanlığın sınanması
+Durağanlığı görsel olarak incelemek için seri grafiği ve otokorelasyon fonksiyonu kullanılır. Durağan olmayan serilerde otokorelasyonlar çok yavaş söner. Biçimsel sınama için birim kök testleri kullanılır. Genişletilmiş Dickey-Fuller (ADF) testinde sıfır hipotezi serinin birim kök içerdiği, yani durağan olmadığı yönündedir. KPSS testinde ise sıfır hipotezi serinin durağan olduğudur. İki test birlikte yorumlanırsa daha güvenilir bir karar verilir.
+
+Seriyi durağan hale getirme
+Trend nedeniyle ortalaması değişen bir seri, birinci farkı alınarak çoğunlukla durağan hale getirilir. Birinci fark, her gözlemden bir önceki gözlemin çıkarılmasıdır. Bir kez fark almak yetmezse ikinci fark alınabilir ancak gereğinden fazla fark almak seriye yapay bir bağımlılık ekler. Varyansı seviyeyle birlikte büyüyen serilerde önce logaritma veya Box-Cox dönüşümü uygulanır, ardından fark alınır. Mevsimsel serilerde mevsimsel fark alınır: aylık veride her gözlemden on iki ay önceki gözlem çıkarılır.
+
+ACF ve PACF ile model belirleme
+Otokorelasyon fonksiyonu (ACF), seri ile kendi gecikmeli değerleri arasındaki korelasyonu gösterir. Kısmi otokorelasyon fonksiyonu (PACF) ise aradaki gecikmelerin etkisi çıkarıldıktan sonra kalan korelasyonu gösterir. AR(p) sürecinde PACF p. gecikmeden sonra aniden kesilir, ACF ise yavaş yavaş söner. MA(q) sürecinde ACF q. gecikmeden sonra kesilir, PACF yavaşça söner. Her ikisi de yavaş sönüyorsa karma bir ARMA modeli düşünülür. Aday modeller arasında seçim yapılırken AIC ve BIC gibi bilgi kriterleri karşılaştırılır ve değeri küçük olan model tercih edilir.
+
+Artık analizi
+Model kurulduktan sonra artıkların beyaz gürültü olup olmadığı kontrol edilir. Artıkların ACF grafiğinde anlamlı bir gecikme kalmamalıdır. Ljung-Box testinin sıfır hipotezi artıkların ilk h gecikmeye kadar ilişkisiz olduğudur. Bu hipotez reddedilirse modelde yakalanamamış bir yapı vardır ve model yeniden kurulmalıdır.
