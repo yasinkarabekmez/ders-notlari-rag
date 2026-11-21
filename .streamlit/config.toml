@@ -1,0 +1,15 @@
+# Streamlit tema ayarları (app.py ile aynı klasördeki .streamlit klasöründe durmalı)
+# Renkler: ui-ux-pro-max tasarım sistemi, "Minimalism & Swiss Style" + akademik palet
+[theme]
+base = "light"
+primaryColor = "#2563EB"              # Odak mavisi: butonlar, kaydırıcı, seçili öğeler
+backgroundColor = "#F8FAFC"           # Sayfa zemini
+secondaryBackgroundColor = "#F1F5FD"  # Kenar çubuğu ve giriş kutusu zemini
+textColor = "#0F172A"                 # Ana metin (zemine karşı kontrast > 15:1)
+font = "sans serif"
+
+[server]
+maxUploadSize = 50                    # Dosya başına en fazla 50 MB
+
+[browser]
+gatherUsageStats = false              # İlk açılışta e-posta/istatistik sorusunu atlar
